@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OneSell ERP · AI ERP for TikTok Shop sellers</title>
+<meta name="description" content="OneSell ERP is an ERP for TikTok Shop sellers: AI listing, product images, order sync, shipping label printing, after-sales and profit reports in one place.">
+<link rel="icon" href="favicon-64.png">
+<link rel="apple-touch-icon" href="apple-180.png">
+<style>
+:root{--brand:#002050;--accent:#fe2c55;--bg:#f5f7fb;--card:#fff;--fg:#1f2937;--muted:#5b6474;--line:#e5e7eb}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei","Noto Sans Thai",sans-serif}
+a{color:#2f6fc4}
+header.top{background:var(--brand);color:#fff}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:700;font-size:18px}
+.logo img{width:34px;height:34px;border-radius:8px}
+.langs{display:flex;gap:6px;flex-wrap:wrap}
+.langs button{background:transparent;border:1px solid rgba(255,255,255,.35);color:#fff;border-radius:999px;padding:4px 12px;font-size:13px;cursor:pointer}
+.langs button[aria-pressed=true]{background:#fff;color:var(--brand);border-color:#fff}
+.hero{padding:56px 0 64px}
+.tag{display:inline-block;background:rgba(254,44,85,.16);color:#ffd0da;border-radius:999px;padding:4px 12px;font-size:13px;margin-bottom:14px}
+.hero h1{font-size:40px;line-height:1.2;margin:0 0 14px;max-width:760px}
+.hero h1 span{color:var(--accent)}
+.hero p{font-size:18px;color:#d6deeb;max-width:720px;margin:0 0 24px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 20px;border-radius:10px;font-weight:600;text-decoration:none}
+.btn.primary{background:var(--accent);color:#fff}
+.btn.ghost{border:1px solid rgba(255,255,255,.5);color:#fff}
+.pipe{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:40px}
+.pipe div{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:14px 16px}
+.pipe b{display:block;color:#fff}.pipe small{color:#b9c4d6}
+section{padding:56px 0}
+section h2{font-size:28px;margin:0 0 8px}
+.lead{color:var(--muted);margin:0 0 28px;max-width:720px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.card h3{margin:0 0 6px;font-size:19px}
+.card ul{margin:10px 0 0;padding-left:20px;color:var(--muted)}
+.card li{margin:4px 0}
+.ico{width:40px;height:40px;border-radius:10px;background:#eef3fb;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:12px}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.steps .card{position:relative;padding-top:52px}
+.steps .card::before{counter-increment:s;content:counter(s);position:absolute;top:18px;left:22px;width:26px;height:26px;border-radius:50%;background:var(--brand);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:14px}
+.sites{display:flex;flex-wrap:wrap;gap:8px}
+.sites span{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:14px}
+.alt{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+footer{color:var(--muted);font-size:14px;padding:28px 0 40px}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:760px){.hero h1{font-size:30px}.grid,.steps,.pipe{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="bar">
+      <a class="logo" href="./"><img src="brand-256.png" alt="">OneSell ERP</a>
+      <nav class="langs" aria-label="Language">
+        <button data-l="en">English</button>
+        <button data-l="id">Bahasa Indonesia</button>
+        <button data-l="vi">Tiếng Việt</button>
+        <button data-l="th">ไทย</button>
+        <button data-l="ms">Bahasa Melayu</button>
+        <button data-l="zh">中文</button>
+      </nav>
+    </div>
+    <div class="hero">
+      <span class="tag" data-t="tag"></span>
+      <h1><span data-t="h1a"></span> <span data-t="h1b"></span></h1>
+      <p data-t="heroLead"></p>
+      <div class="cta">
+        <a class="btn primary" href="#start" data-t="ctaStart"></a>
+        <a class="btn ghost" href="#features" data-t="ctaFeatures"></a>
+      </div>
+      <div class="pipe">
+        <div><b data-t="p1"></b><small data-t="p1d"></small></div>
+        <div><b data-t="p2"></b><small data-t="p2d"></small></div>
+        <div><b data-t="p3"></b><small data-t="p3d"></small></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="features">
+  <div class="wrap">
+    <h2 data-t="fTitle"></h2>
+    <p class="lead" data-t="fLead"></p>
+    <div class="grid">
+      <div class="card"><div class="ico">🛒</div><h3 data-t="f1"></h3><p data-t="f1d"></p><ul data-list="f1l"></ul></div>
+      <div class="card"><div class="ico">📦</div><h3 data-t="f2"></h3><p data-t="f2d"></p><ul data-list="f2l"></ul></div>
+      <div class="card"><div class="ico">🎨</div><h3 data-t="f3"></h3><p data-t="f3d"></p><ul data-list="f3l"></ul></div>
+      <div class="card"><div class="ico">📊</div><h3 data-t="f4"></h3><p data-t="f4d"></p><ul data-list="f4l"></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="start" class="alt">
+  <div class="wrap">
+    <h2 data-t="sTitle"></h2>
+    <p class="lead" data-t="sLead"></p>
+    <div class="steps">
+      <div class="card"><h3 data-t="s1"></h3><p data-t="s1d"></p></div>
+      <div class="card"><h3 data-t="s2"></h3><p data-t="s2d"></p></div>
+      <div class="card"><h3 data-t="s3"></h3><p data-t="s3d"></p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 data-t="mTitle"></h2>
+    <p class="lead" data-t="mLead"></p>
+    <div class="sites" data-sites></div>
+    <h2 style="margin-top:44px" data-t="dTitle"></h2>
+    <p class="lead" data-t="dLead"></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 OneSell ERP · <a href="mailto:dev@onesellerp.com">dev@onesellerp.com</a></span>
+    <span><a href="privacy.html" data-t="privacy"></a> · <a href="terms.html" data-t="terms"></a></span>
+  </div>
+</footer>
+
+<script>
+const T = {
+en: {
+  tag:'ERP for TikTok Shop sellers', h1a:'Run your TikTok Shop', h1b:'from one workspace',
+  heroLead:'OneSell ERP connects to your TikTok Shop through the official Open API. List products with AI, sync orders, print shipping labels, handle after-sales and see profit per order — all in one place.',
+  ctaStart:'How to get started', ctaFeatures:'See features',
+  p1:'Source products', p1d:'1688 · Taobao · Pinduoduo · your own catalog',
+  p2:'AI processing', p2d:'Copywriting · images · pricing · listing',
+  p3:'TikTok Shop markets', p3d:'Publish to your authorized shops',
+  fTitle:'Main features', fLead:'Everything a cross-border TikTok Shop seller does every day, in one ERP.',
+  f1:'One-click listing', f1d:'Turn a sourced product into a ready-to-publish TikTok Shop listing.',
+  f1l:['Apply listing templates: category, attributes, price and stock','AI rewrites title and description in the local language','Publish to the authorized shop and track status'],
+  f2:'Order fulfillment', f2d:'Process orders without switching between Seller Center pages.',
+  f2l:['Sync TikTok Shop orders automatically','Arrange shipment and print shipping labels in batch','Review returns and refunds, track logistics'],
+  f3:'AI images and video', f3d:'Create product visuals that match each market.',
+  f3l:['White-background main images and scene images','Marketing images with localized text','Short product videos from product photos'],
+  f4:'Data and profit', f4d:'Know which products and orders make money.',
+  f4l:['Shop and order statistics','Per-order profit based on TikTok settlement data','Inventory and purchase records'],
+  sTitle:'How to get started', sLead:'No separate registration is needed.',
+  s1:'Install from TikTok Shop', s1d:'Find OneSell ERP in the TikTok Shop App Store and click install.',
+  s2:'Authorize your shop', s2d:'Approve the requested permissions. Your company account is created automatically and you set a login password.',
+  s3:'Start working', s3d:'Your products and orders sync in. Switch the interface language any time: English, Bahasa Indonesia, Tiếng Việt, ไทย, 中文.',
+  mTitle:'Supported markets', mLead:'Works with TikTok Shop shops in these markets:',
+  sites:['Indonesia','Vietnam','Thailand','Malaysia','Philippines','Singapore','United States','United Kingdom'],
+  dTitle:'Your data', dLead:'OneSell ERP only uses shop data you authorize, only for the features above. You can revoke authorization in TikTok Shop Seller Center at any time; we then stop accessing your shop and delete shop data as described in our Privacy Policy.',
+  privacy:'Privacy Policy', terms:'Terms of Service'
+},
+id: {
+  tag:'ERP untuk penjual TikTok Shop', h1a:'Kelola TikTok Shop Anda', h1b:'dari satu tempat kerja',
+  heroLead:'OneSell ERP terhubung ke TikTok Shop Anda melalui Open API resmi. Unggah produk dengan AI, sinkronkan pesanan, cetak label pengiriman, tangani purnajual, dan lihat laba per pesanan — semuanya di satu tempat.',
+  ctaStart:'Cara memulai', ctaFeatures:'Lihat fitur',
+  p1:'Cari produk', p1d:'1688 · Taobao · Pinduoduo · katalog Anda sendiri',
+  p2:'Diproses AI', p2d:'Teks · gambar · harga · unggah produk',
+  p3:'Pasar TikTok Shop', p3d:'Terbitkan ke toko yang sudah diotorisasi',
+  fTitle:'Fitur utama', fLead:'Semua pekerjaan harian penjual lintas negara TikTok Shop, dalam satu ERP.',
+  f1:'Unggah produk sekali klik', f1d:'Ubah produk hasil sourcing menjadi listing TikTok Shop yang siap terbit.',
+  f1l:['Pakai template listing: kategori, atribut, harga, dan stok','AI menulis ulang judul dan deskripsi dalam bahasa lokal','Terbitkan ke toko yang diotorisasi dan pantau statusnya'],
+  f2:'Pemenuhan pesanan', f2d:'Proses pesanan tanpa bolak-balik halaman Seller Center.',
+  f2l:['Sinkronisasi pesanan TikTok Shop otomatis','Atur pengiriman dan cetak label pengiriman secara massal','Tinjau retur dan pengembalian dana, lacak pengiriman'],
+  f3:'Gambar dan video AI', f3d:'Buat visual produk yang sesuai untuk tiap pasar.',
+  f3l:['Gambar utama latar putih dan gambar suasana','Gambar promosi dengan teks bahasa lokal','Video produk singkat dari foto produk'],
+  f4:'Data dan laba', f4d:'Ketahui produk dan pesanan mana yang menghasilkan untung.',
+  f4l:['Statistik toko dan pesanan','Laba per pesanan berdasarkan data penyelesaian TikTok','Catatan stok dan pembelian'],
+  sTitle:'Cara memulai', sLead:'Tidak perlu pendaftaran terpisah.',
+  s1:'Pasang dari TikTok Shop', s1d:'Cari OneSell ERP di App Store TikTok Shop lalu klik pasang.',
+  s2:'Otorisasi toko Anda', s2d:'Setujui izin yang diminta. Akun perusahaan dibuat otomatis dan Anda mengatur kata sandi masuk.',
+  s3:'Mulai bekerja', s3d:'Produk dan pesanan Anda tersinkron. Ganti bahasa antarmuka kapan saja: English, Bahasa Indonesia, Tiếng Việt, ไทย, 中文.',
+  mTitle:'Pasar yang didukung', mLead:'Dapat digunakan untuk toko TikTok Shop di pasar berikut:',
+  sites:['Indonesia','Vietnam','Thailand','Malaysia','Filipina','Singapura','Amerika Serikat','Inggris'],
+  dTitle:'Data Anda', dLead:'OneSell ERP hanya memakai data toko yang Anda otorisasi, hanya untuk fitur di atas. Anda dapat mencabut otorisasi di Seller Center TikTok Shop kapan saja; kami lalu berhenti mengakses toko Anda dan menghapus data toko sesuai Kebijakan Privasi.',
+  privacy:'Kebijakan Privasi', terms:'Ketentuan Layanan'
+},
+vi: {
+  tag:'ERP cho nhà bán hàng TikTok Shop', h1a:'Vận hành TikTok Shop', h1b:'trên một nền tảng',
+  heroLead:'OneSell ERP kết nối với TikTok Shop của bạn qua Open API chính thức. Đăng sản phẩm bằng AI, đồng bộ đơn hàng, in phiếu giao hàng, xử lý hậu mãi và xem lợi nhuận từng đơn — tất cả ở một nơi.',
+  ctaStart:'Cách bắt đầu', ctaFeatures:'Xem tính năng',
+  p1:'Nguồn hàng', p1d:'1688 · Taobao · Pinduoduo · danh mục của bạn',
+  p2:'AI xử lý', p2d:'Nội dung · hình ảnh · giá · đăng bán',
+  p3:'Các thị trường TikTok Shop', p3d:'Đăng lên các shop đã ủy quyền',
+  fTitle:'Tính năng chính', fLead:'Mọi việc hằng ngày của nhà bán hàng xuyên biên giới trên TikTok Shop, trong một ERP.',
+  f1:'Đăng bán một chạm', f1d:'Biến sản phẩm tìm được thành tin đăng TikTok Shop sẵn sàng xuất bản.',
+  f1l:['Áp dụng mẫu đăng: danh mục, thuộc tính, giá và tồn kho','AI viết lại tiêu đề và mô tả bằng ngôn ngữ địa phương','Đăng lên shop đã ủy quyền và theo dõi trạng thái'],
+  f2:'Xử lý đơn hàng', f2d:'Xử lý đơn mà không phải chuyển qua lại các trang Seller Center.',
+  f2l:['Tự động đồng bộ đơn hàng TikTok Shop','Sắp xếp giao hàng và in phiếu giao hàng hàng loạt','Duyệt trả hàng, hoàn tiền và theo dõi vận chuyển'],
+  f3:'Hình ảnh và video AI', f3d:'Tạo hình ảnh sản phẩm phù hợp với từng thị trường.',
+  f3l:['Ảnh chính nền trắng và ảnh bối cảnh','Ảnh quảng cáo với chữ theo ngôn ngữ địa phương','Video sản phẩm ngắn từ ảnh sản phẩm'],
+  f4:'Dữ liệu và lợi nhuận', f4d:'Biết sản phẩm và đơn hàng nào mang lại lãi.',
+  f4l:['Thống kê shop và đơn hàng','Lợi nhuận từng đơn theo dữ liệu quyết toán TikTok','Hồ sơ tồn kho và mua hàng'],
+  sTitle:'Cách bắt đầu', sLead:'Không cần đăng ký riêng.',
+  s1:'Cài đặt từ TikTok Shop', s1d:'Tìm OneSell ERP trong App Store của TikTok Shop và nhấn cài đặt.',
+  s2:'Ủy quyền shop', s2d:'Đồng ý các quyền được yêu cầu. Tài khoản doanh nghiệp được tạo tự động và bạn đặt mật khẩu đăng nhập.',
+  s3:'Bắt đầu làm việc', s3d:'Sản phẩm và đơn hàng được đồng bộ. Đổi ngôn ngữ giao diện bất cứ lúc nào: English, Bahasa Indonesia, Tiếng Việt, ไทย, 中文.',
+  mTitle:'Thị trường hỗ trợ', mLead:'Dùng được với shop TikTok Shop tại các thị trường:',
+  sites:['Indonesia','Việt Nam','Thái Lan','Malaysia','Philippines','Singapore','Hoa Kỳ','Vương quốc Anh'],
+  dTitle:'Dữ liệu của bạn', dLead:'OneSell ERP chỉ dùng dữ liệu shop bạn ủy quyền, chỉ cho các tính năng trên. Bạn có thể hủy ủy quyền trong Seller Center bất cứ lúc nào; khi đó chúng tôi ngừng truy cập shop và xóa dữ liệu shop theo Chính sách quyền riêng tư.',
+  privacy:'Chính sách quyền riêng tư', terms:'Điều khoản dịch vụ'
+},
+th: {
+  tag:'ERP สำหรับผู้ขาย TikTok Shop', h1a:'บริหาร TikTok Shop ของคุณ', h1b:'ในที่เดียว',
+  heroLead:'OneSell ERP เชื่อมต่อกับ TikTok Shop ของคุณผ่าน Open API อย่างเป็นทางการ ลงสินค้าด้วย AI ซิงค์คำสั่งซื้อ พิมพ์ใบปะหน้าพัสดุ จัดการหลังการขาย และดูกำไรรายคำสั่งซื้อ — ครบในที่เดียว',
+  ctaStart:'เริ่มต้นใช้งาน', ctaFeatures:'ดูฟีเจอร์',
+  p1:'หาสินค้า', p1d:'1688 · Taobao · Pinduoduo · แคตตาล็อกของคุณ',
+  p2:'AI ประมวลผล', p2d:'ข้อความ · รูปภาพ · ราคา · ลงขาย',
+  p3:'ตลาด TikTok Shop', p3d:'เผยแพร่ไปยังร้านที่ให้สิทธิ์แล้ว',
+  fTitle:'ฟีเจอร์หลัก', fLead:'งานประจำวันของผู้ขายข้ามพรมแดนบน TikTok Shop รวมไว้ใน ERP เดียว',
+  f1:'ลงสินค้าคลิกเดียว', f1d:'เปลี่ยนสินค้าที่หามาให้เป็นรายการ TikTok Shop ที่พร้อมเผยแพร่',
+  f1l:['ใช้เทมเพลต: หมวดหมู่ คุณลักษณะ ราคา และสต็อก','AI เขียนชื่อและคำอธิบายใหม่เป็นภาษาท้องถิ่น','เผยแพร่ไปยังร้านที่ให้สิทธิ์และติดตามสถานะ'],
+  f2:'จัดการคำสั่งซื้อ', f2d:'ดำเนินการคำสั่งซื้อโดยไม่ต้องสลับหน้า Seller Center',
+  f2l:['ซิงค์คำสั่งซื้อ TikTok Shop อัตโนมัติ','จัดส่งและพิมพ์ใบปะหน้าพัสดุทีละหลายรายการ','ตรวจสอบการคืนสินค้า คืนเงิน และติดตามพัสดุ'],
+  f3:'รูปภาพและวิดีโอ AI', f3d:'สร้างภาพสินค้าที่เหมาะกับแต่ละตลาด',
+  f3l:['รูปหลักพื้นขาวและรูปฉากใช้งาน','รูปโปรโมตพร้อมข้อความภาษาท้องถิ่น','วิดีโอสินค้าสั้นจากรูปสินค้า'],
+  f4:'ข้อมูลและกำไร', f4d:'รู้ว่าสินค้าและคำสั่งซื้อไหนทำกำไร',
+  f4l:['สถิติร้านค้าและคำสั่งซื้อ','กำไรรายคำสั่งซื้อจากข้อมูลการชำระเงินของ TikTok','บันทึกสต็อกและการจัดซื้อ'],
+  sTitle:'เริ่มต้นใช้งาน', sLead:'ไม่ต้องสมัครแยก',
+  s1:'ติดตั้งจาก TikTok Shop', s1d:'ค้นหา OneSell ERP ใน App Store ของ TikTok Shop แล้วกดติดตั้ง',
+  s2:'ให้สิทธิ์ร้านค้า', s2d:'อนุมัติสิทธิ์ที่ขอ ระบบจะสร้างบัญชีบริษัทให้อัตโนมัติ และคุณตั้งรหัสผ่านเข้าสู่ระบบ',
+  s3:'เริ่มทำงาน', s3d:'สินค้าและคำสั่งซื้อจะซิงค์เข้ามา เปลี่ยนภาษาหน้าจอได้ตลอด: English, Bahasa Indonesia, Tiếng Việt, ไทย, 中文',
+  mTitle:'ตลาดที่รองรับ', mLead:'ใช้กับร้าน TikTok Shop ในตลาดเหล่านี้:',
+  sites:['อินโดนีเซีย','เวียดนาม','ไทย','มาเลเซีย','ฟิลิปปินส์','สิงคโปร์','สหรัฐอเมริกา','สหราชอาณาจักร'],
+  dTitle:'ข้อมูลของคุณ', dLead:'OneSell ERP ใช้เฉพาะข้อมูลร้านที่คุณให้สิทธิ์ และใช้เพื่อฟีเจอร์ข้างต้นเท่านั้น คุณยกเลิกสิทธิ์ใน Seller Center ได้ทุกเมื่อ จากนั้นเราจะหยุดเข้าถึงร้านและลบข้อมูลร้านตามนโยบายความเป็นส่วนตัว',
+  privacy:'นโยบายความเป็นส่วนตัว', terms:'ข้อกำหนดการให้บริการ'
+},
+ms: {
+  tag:'ERP untuk penjual TikTok Shop', h1a:'Urus TikTok Shop anda', h1b:'dari satu ruang kerja',
+  heroLead:'OneSell ERP bersambung ke TikTok Shop anda melalui Open API rasmi. Senaraikan produk dengan AI, segerakkan pesanan, cetak label penghantaran, urus selepas jualan dan lihat untung setiap pesanan — semuanya di satu tempat.',
+  ctaStart:'Cara bermula', ctaFeatures:'Lihat ciri',
+  p1:'Dapatkan produk', p1d:'1688 · Taobao · Pinduoduo · katalog anda sendiri',
+  p2:'Diproses AI', p2d:'Teks · imej · harga · penyenaraian',
+  p3:'Pasaran TikTok Shop', p3d:'Terbitkan ke kedai yang dibenarkan',
+  fTitle:'Ciri utama', fLead:'Semua kerja harian penjual rentas sempadan TikTok Shop, dalam satu ERP.',
+  f1:'Penyenaraian satu klik', f1d:'Jadikan produk yang diperoleh sebagai penyenaraian TikTok Shop yang sedia diterbitkan.',
+  f1l:['Guna templat: kategori, atribut, harga dan stok','AI menulis semula tajuk dan penerangan dalam bahasa tempatan','Terbitkan ke kedai yang dibenarkan dan pantau status'],
+  f2:'Pemenuhan pesanan', f2d:'Proses pesanan tanpa bertukar-tukar halaman Seller Center.',
+  f2l:['Segerakkan pesanan TikTok Shop secara automatik','Atur penghantaran dan cetak label penghantaran secara pukal','Semak pemulangan dan bayaran balik, jejak penghantaran'],
+  f3:'Imej dan video AI', f3d:'Hasilkan visual produk yang sesuai untuk setiap pasaran.',
+  f3l:['Imej utama latar putih dan imej suasana','Imej promosi dengan teks bahasa tempatan','Video produk pendek daripada foto produk'],
+  f4:'Data dan keuntungan', f4d:'Ketahui produk dan pesanan yang menguntungkan.',
+  f4l:['Statistik kedai dan pesanan','Untung setiap pesanan berdasarkan data penyelesaian TikTok','Rekod stok dan pembelian'],
+  sTitle:'Cara bermula', sLead:'Tiada pendaftaran berasingan diperlukan.',
+  s1:'Pasang dari TikTok Shop', s1d:'Cari OneSell ERP di App Store TikTok Shop dan klik pasang.',
+  s2:'Benarkan kedai anda', s2d:'Luluskan kebenaran yang diminta. Akaun syarikat dicipta secara automatik dan anda menetapkan kata laluan.',
+  s3:'Mula bekerja', s3d:'Produk dan pesanan anda disegerakkan. Tukar bahasa antara muka bila-bila masa: English, Bahasa Indonesia, Tiếng Việt, ไทย, 中文.',
+  mTitle:'Pasaran disokong', mLead:'Boleh digunakan untuk kedai TikTok Shop di pasaran berikut:',
+  sites:['Indonesia','Vietnam','Thailand','Malaysia','Filipina','Singapura','Amerika Syarikat','United Kingdom'],
+  dTitle:'Data anda', dLead:'OneSell ERP hanya menggunakan data kedai yang anda benarkan, untuk ciri di atas sahaja. Anda boleh membatalkan kebenaran di Seller Center bila-bila masa; kami kemudian berhenti mengakses kedai anda dan memadam data kedai seperti dalam Dasar Privasi.',
+  privacy:'Dasar Privasi', terms:'Terma Perkhidmatan'
+},
+zh: {
+  tag:'TikTok Shop 跨境卖家的 ERP', h1a:'一个工作台', h1b:'管好你的 TikTok Shop',
+  heroLead:'OneSell ERP（万售ERP）通过 TikTok Shop 官方 Open API 连接你的店铺：AI 上架商品、同步订单、打印面单、处理售后、按单核算利润，都在同一个平台完成。',
+  ctaStart:'如何开始使用', ctaFeatures:'查看功能',
+  p1:'国内货源', p1d:'1688 · 淘宝 · 拼多多 · 自有商品',
+  p2:'AI 一键处理', p2d:'文案 · 作图 · 定价 · 上架',
+  p3:'TikTok Shop 各站点', p3d:'发布到已授权的店铺',
+  fTitle:'主要功能', fLead:'TikTok Shop 跨境卖家每天要做的事，放进一个 ERP。',
+  f1:'一键上架', f1d:'把采集的货源变成可直接发布的 TikTok Shop 商品。',
+  f1l:['套用上架模板：类目、属性、价格、库存','AI 把标题和描述改写成当地语言','发布到已授权店铺并跟踪状态'],
+  f2:'订单履约', f2d:'不用在 Seller Center 各页面之间来回切换。',
+  f2l:['自动同步 TikTok Shop 订单','批量安排发货、打印面单','审核退货退款，跟踪物流'],
+  f3:'AI 作图和视频', f3d:'为每个站点生成合适的商品图。',
+  f3l:['白底主图和场景图','带当地语言文字的营销图','用商品图生成短视频'],
+  f4:'数据与利润', f4d:'看清哪些商品和订单真正赚钱。',
+  f4l:['店铺和订单统计','按 TikTok 结算数据核算每单利润','库存和采购记录'],
+  sTitle:'如何开始使用', sLead:'不需要单独注册。',
+  s1:'在 TikTok Shop 安装', s1d:'在 TikTok Shop 应用市场找到 OneSell ERP，点击安装。',
+  s2:'授权店铺', s2d:'同意所需权限后，系统自动开通企业账号，并引导你设置登录密码。',
+  s3:'开始使用', s3d:'商品和订单自动同步进来。界面语言可随时切换：English、Bahasa Indonesia、Tiếng Việt、ไทย、中文。',
+  mTitle:'支持的站点', mLead:'支持以下站点的 TikTok Shop 店铺：',
+  sites:['印度尼西亚','越南','泰国','马来西亚','菲律宾','新加坡','美国','英国'],
+  dTitle:'你的数据', dLead:'OneSell ERP 只使用你授权的店铺数据，并且只用于上面的功能。你可以随时在 Seller Center 取消授权；取消后我们停止访问店铺，并按隐私政策删除店铺数据。',
+  privacy:'隐私政策', terms:'服务条款'
+}
+};
+const LANGS = Object.keys(T);
+function pick(){
+  const q = new URLSearchParams(location.search).get('lang');
+  if (q && T[q]) return q;
+  const n = (navigator.language || 'en').toLowerCase();
+  const m = n.split('-')[0];
+  if (m === 'in') return 'id';
+  return T[m] ? m : 'en';
+}
+function apply(l){
+  const d = T[l];
+  document.documentElement.lang = l === 'zh' ? 'zh-CN' : l;
+  document.querySelectorAll('[data-t]').forEach(el => { el.textContent = d[el.dataset.t] ?? T.en[el.dataset.t]; });
+  document.querySelectorAll('[data-list]').forEach(el => { el.innerHTML = ''; d[el.dataset.list].forEach(t => { const li = document.createElement('li'); li.textContent = t; el.appendChild(li); }); });
+  const s = document.querySelector('[data-sites]'); s.innerHTML = ''; d.sites.forEach(t => { const sp = document.createElement('span'); sp.textContent = t; s.appendChild(sp); });
+  document.querySelectorAll('.langs button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.l === l)));
+  document.title = 'OneSell ERP · ' + d.tag;
+}
+document.querySelectorAll('.langs button').forEach(b => b.addEventListener('click', () => {
+  apply(b.dataset.l);
+  const u = new URL(location.href); u.searchParams.set('lang', b.dataset.l); history.replaceState(null, '', u);
+}));
+apply(pick());
+</script>
+<noscript><p style="padding:20px">OneSell ERP — ERP for TikTok Shop sellers: AI listing, order sync, shipping label printing, after-sales and profit reports. <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p></noscript>
+</body>
+</html>
